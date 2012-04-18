@@ -1,9 +1,7 @@
 <% if logged_in? %>
   logged in
 
-  <%= form_tag session_path, :method => :delete do %>
-    <%= submit_tag "log out" %>
-  <% end %>
+  <%= link_to "log out", session_path, :method => :delete %>
 <% else %>
   not logged in
 
