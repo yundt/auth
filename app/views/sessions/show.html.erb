@@ -1,0 +1,13 @@
+<% if logged_in? %>
+  logged in
+
+  <%= form_tag session_path, :method => :delete do %>
+    <%= submit_tag "log out" %>
+  <% end %>
+<% else %>
+  not logged in
+
+  <%= form_tag session_path, :method => :post do %>
+    <%= submit_tag "log in" %>
+  <% end %>
+<% end %>

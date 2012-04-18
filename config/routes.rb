@@ -1,4 +1,6 @@
 Auth::Application.routes.draw do
+  resource :session, :only => [:show, :create, :destroy]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
