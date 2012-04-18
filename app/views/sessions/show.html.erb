@@ -8,6 +8,7 @@
   not logged in
 
   <%= form_tag session_path, :method => :post do %>
+    <%= password_field_tag %>
     <%= submit_tag "log in" %>
   <% end %>
 <% end %>
